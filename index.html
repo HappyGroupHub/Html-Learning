@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>表單設計</title>
+  </head>
+  <body>
+    <form action="" method="get">
+      <label for="myname">姓名:</label>
+      <input
+        type="text"
+        name="Inputname"
+        id="myname"
+        placeholder="請輸入真實姓名"
+        minlength="2"
+        maxlength="4"
+        required
+      />
+      <br />
+      <label for="phone">電話:</label>
+      <input type="text" name="phone" id="phone" placeholder="請填入電話號碼" />
+      <br />
+      <label for="email">電子郵件</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="請填入電子郵件"
+      />
+      <input type="checkbox" name="subscribe" id="checkbox" />
+      <label for="checkbox">訂閱電子報</label>
+      <br />
+      <label for="age">年齡</label>
+      <input type="number" name="age" id="age" min="0" max="100" />
+      <br />
+      <label for="password">密碼</label>
+      <input
+        type="password"
+        name="password"
+        id="password"
+        placeholder="請輸入密碼"
+      />
+      <br />
+      <label for="sex">性別</label>
+      <input type="radio" name="sex" id="male" />男性
+      <input type="radio" name="sex" id="female" />女性
+      <br />
+      <label for="city">城市</label>
+      <select name="city" id="city">
+        <option value="Taipei">台北</option>
+        <option value="Taichung">台中</option>
+      </select>
+      <br />
+      <button type="submit">提交</button>
+    </form>
+  </body>
+</html>
