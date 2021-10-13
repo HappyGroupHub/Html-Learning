@@ -1,12 +1,96 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>表格及表單作業</title>
-</head>
-<body>
-    
-</body>
+    <style>
+      table,
+      th,
+      td {
+        border-collapse: collapse;
+        border: 1px solid black;
+      }
+      th,
+      td {
+        padding: 0.25rem;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="" method="get">
+      <table>
+        <tr>
+          <td>姓名</td>
+          <td>
+            <label for="lastname">姓: </label>
+            <input type="text" name="lastname" id="lastname" size="10" />
+          </td>
+          <td>
+            <label for="firstname">名: </label>
+            <input type="text" name="firstname" id="firstname" size="10" />
+          </td>
+        </tr>
+        <tr>
+          <td>性別</td>
+          <td colspan="2">
+            <input type="radio" name="sex" id="male" />男
+            <input type="radio" name="sex" id="female" />女
+            <input type="radio" name="sex" id="other" />其他
+          </td>
+        </tr>
+        <tr>
+          <td>出生月</td>
+          <td colspan="2">
+            <select name="birthMonth" id="birthMonth">
+              <option value="Jan">一月</option>
+              <option value="Feb">二月</option>
+              <option value="Mar">三月</option>
+              <option value="Apr">四月</option>
+              <option value="May">五月</option>
+              <option value="Jun">六月</option>
+              <option value="Jul">七月</option>
+              <option value="Aug">八月</option>
+              <option value="Sep">九月</option>
+              <option value="Oct">十月</option>
+              <option value="Nov">十一月</option>
+              <option value="Dec">十二月</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>興趣</td>
+          <td colspan="2">
+            <input type="checkbox" name="hobby" id="balls" />打球
+            <input type="checkbox" name="hobby" id="games" />玩遊戲
+            <input type="checkbox" name="hobby" id="sleep" />睡覺
+            <input type="checkbox" name="hobby" id="study" />學習
+          </td>
+        </tr>
+        <tr>
+          <td>密碼</td>
+          <td><input type="password" name="pwd1" id="pwd1" size="16" /></td>
+          <td rowspan="2">
+            <img
+              src="https://www.fju.edu.tw/showImg/subLabelImg/1_5_19_1.jpg"
+              alt="fju"
+              width="100"
+              height="100"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>確認密碼</td>
+          <td><input type="password" name="pwd2" id="pwd2" size="16" /></td>
+        </tr>
+        <tr>
+          <th colspan="3">
+            <button type="submit">送出註冊資料</button>
+            <button type="reset">重新填寫</button>
+          </th>
+        </tr>
+      </table>
+    </form>
+  </body>
 </html>
