@@ -1,0 +1,7 @@
+h3 {
+    color: rgb(43, 223, 112);
+}
+
+*::selection{
+    background-color: aqua;
+}
