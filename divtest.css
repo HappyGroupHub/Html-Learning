@@ -1,18 +1,54 @@
 div.container {
   background-color: black;
-  width: 500px;
-  height: 1000px;
+  width: 350px;
+  height: 350px;
 }
-.box {
-  width: 200px;
-  height: 200px;
+div.box {
+  width: 150px;
+  height: 150px;
 }
-.box1 {
-  background-color: chartreuse;
-}
-.box2 {
-  background-color: coral;
-}
-.box3 {
+/* div.box1 {
   background-color: cadetblue;
+  position: absolute;
+} */
+
+div.box2 {
+  background-color: red;
+  top: 0;
+  left: 100px;
+  animation-name: box2;
+  animation-duration: 10s;
+}
+
+/* div.box3 {
+  width: 100px;
+  height: 50px;
+  background-color: white;
+} */
+
+@keyframes box1 {
+  from {
+  }
+  to {
+  }
+}
+
+@keyframes box2 {
+  from {
+    background-color: red;
+    top: 0px;
+    left: 100px;
+  }
+  to {
+    background-color: yellow;
+    top: 350px;
+    left: 100px;
+  }
+}
+
+@keyframes box3 {
+  from {
+  }
+  to {
+  }
 }
