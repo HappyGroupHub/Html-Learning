@@ -13,6 +13,23 @@
     }
   </style>
   <body>
+    <script src="jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!--加入最小化版本的JS-->
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.3.1.js"
+    ></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("button").addClass("animated bounce");
+        $("button").click(function () {
+          var color = this.value;
+          $("body").css("background-color", color);
+        });
+      });
+    </script>
+    <button style="background-color: rgb(204, 161, 96);" value="#CCDDFF" id="target2" class="animated bounce">換個底色</button>
     <h1>test</h1>
     <h2 style="color: rgb(105, 48, 170)">test2</h2>
     <h3>test3</h3>
